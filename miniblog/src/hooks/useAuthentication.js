@@ -73,6 +73,34 @@ export const useAuthentication = () => {
         signOut(auth);
     };
 
+    //Sign in
+    const login = async(data) => {
+
+        checkIfIsCancelled()
+
+        setLoading(true)
+        setError(false)
+
+        try{
+            await signInWithEmailAndPassword(auth, data.email,data.password)
+            setLoading(false);
+        }catch(error){
+
+            console.log(error.message);
+            console.log(typeof error.message);
+            let systemErrorMessage;
+
+            if(error.message.includes("invalid-credential")){
+                systemErrorMessage = "User not found or password incorrect."
+            }else{
+                systemErrorMessage = "An error occurred, please try later."
+            }
+
+            setError(systemErrorMessage);
+            setLoading(false);
+        }
+    };
+
     useEffect(() => {
         return () => setCancelled(true);
     },[]);
@@ -83,5 +111,6 @@ export const useAuthentication = () => {
         error,
         loading,
         logout,
+        login,
     };
 };
