@@ -1,7 +1,9 @@
+
 import React from "react";
 import styles from "./Register.module.css";
 
 import { useState, useEffect } from "react";
+import { useAuthentication } from "../../hooks/useAuthentication";
 
 const Register = () => {
     const [displayName, setDisplayName] = useState("")
@@ -10,7 +12,9 @@ const Register = () => {
     const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState("")
 
-    const handleSubmit = (e) =>{
+    const {createUser, error: authError, loading} = useAuthentication();
+
+    const handleSubmit = async (e) =>{
         e.preventDefault();
 
         setError("")
@@ -25,8 +29,15 @@ const Register = () => {
             setError("Passord not the same!")
         }
 
+        const res = await createUser(user);
 
-    }
+    };
+
+    useEffect(() => {
+        if(authError){
+            setError(authError);
+        }
+    },[authError]);
 
     return(
         <div className={styles.register}>
@@ -76,9 +87,10 @@ const Register = () => {
                     value={confirmPassword}
                     onChange={(e)=>setConfirmPassword(e.target.value)}
                     />
-                    <button className="btn">Register</button>
-                    {error && <p className="error">{error}</p>}
                 </label>
+                {!loading &&  <button className="btn">Register</button>}
+                {loading &&  <button className="btn" disabled>Wait....</button>}
+                {error && <p className="error">{error}</p>}
             </form>
         </div>
     )
