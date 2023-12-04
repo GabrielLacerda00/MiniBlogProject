@@ -8,7 +8,7 @@
   <a href="#-tecnologias-e-ferramentas">Tecnologias e Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  
 </p>
 
 ## Layout
@@ -16,7 +16,7 @@
 
 
 
-## Sobre
+## ❓ Sobre
 
 O projeto MiniBlog é uma iniciativa exemplar para aplicar e aprimorar habilidades em desenvolvimento web, particularmente com a utilização da biblioteca React em conjunto com o Firebase. Este projeto representa um esforço prático para entender melhor a dinâmica entre uma interface de usuário interativa e uma robusta solução de backend.
 
