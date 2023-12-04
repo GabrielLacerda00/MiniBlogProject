@@ -1,4 +1,3 @@
-# MiniBlogProject
 
 <h1 align='center'>Mini Blog</h1>
 
