@@ -3,7 +3,7 @@
 <h1 align='center'>Mini Blog</h1>
 
 <p align="center">
-  <a href="#-sobre">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias-e-ferramentas">Tecnologias e Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,13 +30,6 @@ A integração do React com o Firebase no MiniBlog é um exemplo prático de com
 
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Firebase](https://firebase.google.com/docs/storage/web/start?hl=pt-br)
-
-### Front-end
-
-* ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
-
-### Back-end
-* ![Firebase] ()
 
 ## ✒️ Autor
 * **Desenvolvedor** - [Gabriel Lacerda](https://github.com/GabrielLacerda00)
